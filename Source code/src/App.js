@@ -44,6 +44,7 @@ export default function App() {
   const [rtlCache, setRtlCache] = useState(null);
   const { pathname } = useLocation();
 
+  console.log('1')
   useMemo(() => {
     const cacheRtl = createCache({
       key: "rtl",
